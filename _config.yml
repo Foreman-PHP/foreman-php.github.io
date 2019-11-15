@@ -4,16 +4,16 @@
 
 # Site
 title: 高小胖的blog
-subtitle: '副标题'
-description: '描述'
+subtitle: '高小胖的工作日志'
+description: '一名程序猿👨‍💻‍'
 keywords:
 author: 高小胖
-language: zh-CN
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://foreman-php.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,6 +98,14 @@ deploy:
   type: git
   repo: https://github.com/Foreman-PHP/foreman-php.github.io.git
   branch: master
+
+# https://www.algolia.com/
+algolia:
+  applicationID: '74XQLCU20A'
+  apiKey: '8790a7be6b8bfa21afdbf453e14e09fe'
+  adminApiKey: '42904c66e2928f5981a0eb1d87dda15f'
+  indexName: 'dev_blog'
+  chunkSize: 5000
 
 
 
