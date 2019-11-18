@@ -6,7 +6,9 @@ categories:
 - TP框架
 tags:
 - thinkphp
+- PHP
 ---
+
 ## 需求说明
 
 近期由于项目需要POST跨域请求(get的话用jsonp 我就不写了)
@@ -38,8 +40,8 @@ class Test
     {    // 响应头设置 我们就是通过设置header来跨域的 这就主要代码了 定义行为只是为了前台每次请求都能走这段代码
     	header('Access-Control-Allow-Origin:*');     
     	header('Access-Control-Allow-Methods:*');  
-	header('Access-Control-Allow-Headers:*');
-	header('Access-Control-Allow-Credentials:false');
+		header('Access-Control-Allow-Headers:*');
+		header('Access-Control-Allow-Credentials:false');
     }    
 }
 ```

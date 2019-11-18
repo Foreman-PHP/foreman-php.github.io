@@ -5,7 +5,7 @@ comments: true
 categories:
 - PHP
 tags:
-- php扩展
+- PHP扩展
 ---
 
 ## PHP卸载pecl 安装的扩展
