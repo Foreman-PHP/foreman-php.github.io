@@ -35,7 +35,7 @@ new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
-  enable: true # Open external links in new tab
+  enable: false # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
 filename_case: 0
@@ -99,13 +99,10 @@ deploy:
   repo: https://github.com/Foreman-PHP/foreman-php.github.io.git
   branch: master
 
-# https://www.algolia.com/
-algolia:
-  applicationID: '74XQLCU20A'
-  apiKey: '8790a7be6b8bfa21afdbf453e14e09fe'
-  adminApiKey: '42904c66e2928f5981a0eb1d87dda15f'
-  indexName: 'dev_blog'
-  chunkSize: 5000
-
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
 
 
