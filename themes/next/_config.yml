@@ -153,8 +153,9 @@ links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  洋仔: https://944491509.github.io/ 
+  冰哥: http://www.bingphp.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -250,7 +251,7 @@ post_wordcount:
 #reward_comment: "谢谢你请我喝可乐~"
 wechatpay: /images/wechatpay.jpg
 alipay: /images/alipay.jpg
-#bitcoin: /images/bitcoin.png
+bitcoin: /images/bitcoin.png
 
 # Declare license on posts
 post_copyright:
@@ -707,7 +708,7 @@ canvas_nest: false
 three_waves: false
 
 # canvas_lines
-canvas_lines: true
+canvas_lines: false
 
 # canvas_sphere
 canvas_sphere: false
