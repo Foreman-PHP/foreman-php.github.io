@@ -19,6 +19,12 @@ tags:
 - [Chrome](https://www.google.cn/intl/zh-CN/chrome)
 - [Xnip](https://zh.xnipapp.com)
 - [Alfred](https://www.alfredapp.com)
+- [PicGo](https://molunerfinn.com/PicGo)
+- [Karabiner](https://pqrs.org/osx/karabiner)
+- [TotalFinder](https://totalfinder.binaryage.com)
+- [Dozer](https://dozermac.com)
+- [iina](https://iina.io)
+- [Paste](https://www.waitsun.com/pastebot.html)
 
 
 ## 开发工具
