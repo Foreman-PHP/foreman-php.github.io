@@ -24,7 +24,7 @@ tags:
 - [TotalFinder](https://totalfinder.binaryage.com)
 - [Dozer](https://dozermac.com)
 - [iina](https://iina.io)
-- [Paste](https://www.waitsun.com/pastebot.html)
+- [Paste](https://pasteapp.me/)
 
 
 ## 开发工具
