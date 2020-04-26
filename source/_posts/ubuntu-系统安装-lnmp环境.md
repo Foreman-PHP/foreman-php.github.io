@@ -7,10 +7,6 @@ categories:
 tags: 环境
 ---
 
-##### 使用root 创建 xxx 用户 
-
-	命令: adduser xxx 
-
 ##### 更新 apt-get 
 	命令: sudo apt update
 
@@ -25,7 +21,7 @@ tags: 环境
 如果看到上面的页面,则说明您已经成功安装了 nginx
 
 ##### 安装 mysql
-	命令: sudo apt mysql-server
+	命令: sudo apt install mysql-server
 
 运行完命令 Mysql数据库 就已经安装了, 但没配置完成.
 
@@ -139,7 +135,7 @@ sudo apt-get update
 
 ###### 安装 PHP7.4 以及 php-mysql
 ```code
-sudo apt install php7.4-fpm php-mysql
+sudo apt install php7.4-fpm php7.4-mysql
 ```
 
 ###### 安装 PHP插件
