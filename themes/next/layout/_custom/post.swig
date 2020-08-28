@@ -1,0 +1,1 @@
+{% include '_custom/google_ad.swig' %}
