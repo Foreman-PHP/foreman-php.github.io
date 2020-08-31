@@ -1,5 +1,5 @@
 ---
-title: mysql 慢查询2233
+title: mysql 慢查询
 date: 2020-08-28 11:53:32
 categories:
 - mysql
