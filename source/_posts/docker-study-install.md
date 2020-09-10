@@ -40,12 +40,16 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
 
-4. 设置Docker稳定版仓库
+4. 设置Docker稳定版软件源
 ```
+# 官方源, 国内安装比较慢推荐使用阿里云的
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
+
+# 阿里云软件源
+sudo add-apt-repository "deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
 ```
 5. 添加仓库后, 更新apt源索引 并且安装最新的 docker-ce 社区版
 - 安装时最好设置一下阿里云的镜像会快很多 [阿里云镜像源](https://developer.aliyun.com/mirror/)
