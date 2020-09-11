@@ -1,0 +1,21 @@
+---
+title: Docker 制作自己的镜像
+date: 2020-09-11 10:50:49
+tags: Docker
+comments: true
+categories:
+- Docker
+---
+
+
+ #### 制作镜像
+ 
+ > commit 命令
+
+ ```
+docker commit -m "描述信息"  -a="作者" 容器id 目标镜像明:[tag]
+ ```
+
+ #### 发布镜像
+
+ todo .....

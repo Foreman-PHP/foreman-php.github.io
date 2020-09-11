@@ -117,7 +117,7 @@ docker run [可选参数] image
 #### docker rm 删除容器
 ```
 docker rm 容器id  # 删除指定容器, 先停止容器才能删除, 强制删除 rm -f
-docker -f $(docker ps -aq) #删除所有容器
+docker rm $(docker ps -aq) # 删除所有容器
 ```
 
 #### 启动和停止容器
