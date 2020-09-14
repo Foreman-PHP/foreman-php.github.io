@@ -47,3 +47,28 @@ composer update
 
 ### 提示
 在执行过程中会提示需要一个token 并且附带一个Github网址打开领取你的token复制到命令行回车就OK了
+
+
+#### 分辨需要设置的代理
+HTTP 形式:
+git clone https://github.com/xxx/git.git
+
+SSH 形式:
+git clone git@github.com:xxx/git.git
+
+
+##### HTTP 代理
+git config --global http.proxy http://127.0.0.1:8080
+git config --global https.proxy http://127.0.0.1:8080
+
+##### socks5 代理（如 Shadowsocks）
+git config --global http.proxy socks5://127.0.0.1:1080
+git config --global https.proxy socks5://127.0.0.1:1080
+
+#### 取消设置
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+##### 只对 github 进行代理, 对国内的仓库不影响, 可以这样设置
+git config --global http.https://github.com.proxy https://127.0.0.1:1080
+git config --global https.https://github.com.proxy https://127.0.0.1:1080
