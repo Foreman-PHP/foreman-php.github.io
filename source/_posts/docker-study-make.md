@@ -7,8 +7,7 @@ categories:
 - Docker
 ---
 
-
- #### 制作镜像
+#### 制作镜像
  
  > commit 命令
 
@@ -16,6 +15,6 @@ categories:
 docker commit -m "描述信息"  -a="作者" 容器id 目标镜像明:[tag]
  ```
 
- #### 发布镜像
+#### 发布镜像
 
- todo .....
+{% post_link docker-study-docker-file  DockerFile%}
