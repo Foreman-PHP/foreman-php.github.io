@@ -3,19 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 高小胖的blog
-subtitle: '高小胖的工作日志'
-description: '一名程序猿👨‍💻‍'
+title: '文豪博客 - 技术分享'
+# subtitle: ''
+description: '好好学习, 天天上网👨‍💻‍'
 keywords:
-author: 高小胖
+author: ''
 language: zh-Hans
 timezone: Asia/Shanghai
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://foreman-php.gitee.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing index.html from permalinks

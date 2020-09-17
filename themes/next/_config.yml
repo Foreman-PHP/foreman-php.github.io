@@ -117,9 +117,9 @@ menu_icons:
 
 # Schemes
 #scheme: Muse
-#scheme: Mist
+scheme: Mist
 #scheme: Pisces
-scheme: Gemini
+#scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -132,8 +132,8 @@ scheme: Gemini
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/Foreman-PHP || github
-  E-Mail: mailto:840346763@qq.com || envelope
+  GitHub: https://github.com/whcoding || github
+  E-Mail: mailto:wh-email@qq.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -188,7 +188,7 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  #display: post
+  display: post
   #display: always
   #display: hide
   #display: remove
@@ -223,7 +223,7 @@ excerpt_description: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: true
-  length: 50
+  length: 150
 
 # Post meta display settings
 post_meta:
@@ -249,8 +249,8 @@ post_wordcount:
 
 # Reward
 #reward_comment: "谢谢你请我喝可乐~"
-wechatpay: /images/wechatpay.jpg
-alipay: /images/alipay.jpg
+# wechatpay: /images/wechatpay.jpg
+# alipay: /images/alipay.jpg
 bitcoin: /images/bitcoin.png
 
 # Declare license on posts
@@ -556,17 +556,17 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
   site_uv_footer:
   # custom pv span for the whole site
-  site_pv: true
+  site_pv: false
   site_pv_header: <i class="fa fa-eye"></i>
   site_pv_footer:
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i>
   page_pv_footer:
 
