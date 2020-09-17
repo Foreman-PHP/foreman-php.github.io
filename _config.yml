@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://foreman-php.gitee.io
+url: https://whcoding.gitee.io
 root: /
 permalink: :title/
 permalink_defaults:
@@ -98,8 +98,8 @@ theme: next
 deploy:
 - type: git
   repo:
-    gitee: git@gitee.com:foreman-php/foreman-php.git
-    github: git@github.com:Foreman-PHP/foreman-php.github.io.git
+    gitee: git@gitee.com:whcondig/whcondig.git
+    github: git@github.com:whcoding/whcoding.github.io.git
   branch: master
 - type: baidu_url_submitter
 
