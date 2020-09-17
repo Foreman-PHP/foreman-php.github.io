@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://whcoding.gitee.io
+url: https://wh-coding.gitee.io/
 root: /
 permalink: :title/
 permalink_defaults:
@@ -98,7 +98,7 @@ theme: next
 deploy:
 - type: git
   repo:
-    gitee: git@gitee.com:whcondig/whcondig.git
+    gitee: git@gitee.com:wh-coding/wh-coding.git
     github: git@github.com:whcoding/whcoding.github.io.git
   branch: master
 - type: baidu_url_submitter

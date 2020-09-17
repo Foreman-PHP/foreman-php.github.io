@@ -1,13 +1,12 @@
-
 <div class="copyright">{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
 #}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
-<!--
+
   <span class="with-love">
-    <i class="fa fa-{{ theme.footer.icon }}"></i>
+   <i class="fa fa-bookmark"></i>
   </span>
--->
+
   <span class="author" itemprop="copyrightHolder">{{ theme.footer.copyright || config.author }}</span>
 
   {% if theme.post_wordcount.totalcount %}
@@ -50,5 +49,11 @@
   #}{{ theme.footer.custom_text }}{#
 #}</div>
 {% endif %}
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="powered-by" style="padding-left: 5px;" > 
+  <i class="fa fa-user"></i>
+  <span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+</div>
