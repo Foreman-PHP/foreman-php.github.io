@@ -129,6 +129,7 @@ mysql -u root -p
 使用下面的命令将 `ondrej/php` 添加到Ubuntu的存储库
 
 ```code 
+sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 ```
