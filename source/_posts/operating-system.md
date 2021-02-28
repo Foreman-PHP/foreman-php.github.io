@@ -5,9 +5,6 @@ tags: 操作系统
 comments: true
 categories: 操作系统
 ---
-## 操作系统概述
-
-![](http://whigy.world/20201116223723.png)
 
 ## 操作系统简介
 
