@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="操作系统," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="操作系统简介  什么是操作系统 操作系统是 一种复杂的系统软件, 是不同 程序代码 丶数据结构丶 数据初始化文件的集合,可执行. (选择题 填空题 简答题)   操作系统（Operating System, OS）是一种复杂的系统软件, 是不同程序代码、数据结构、数据初始化文件的集合，可执行. (选择题 填空题 简答题)   操作系统与硬件部分相互作用，并且为运行在计算机上的应用程序提供执行环境.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="操作系统学习">
+<meta property="og:url" content="https://whcoding.com/operating-system/index.html">
+<meta property="og:site_name" content="文豪博客 - 技术分享">
+<meta property="og:description" content="操作系统简介  什么是操作系统 操作系统是 一种复杂的系统软件, 是不同 程序代码 丶数据结构丶 数据初始化文件的集合,可执行. (选择题 填空题 简答题)   操作系统（Operating System, OS）是一种复杂的系统软件, 是不同程序代码、数据结构、数据初始化文件的集合，可执行. (选择题 填空题 简答题)   操作系统与硬件部分相互作用，并且为运行在计算机上的应用程序提供执行环境.">
+<meta property="og:image" content="http://whigy.world//20201117151438.png">
+<meta property="og:image" content="http://whigy.world/20201116225912.png">
+<meta property="og:image" content="http://whigy.world//20201117135732.png">
+<meta property="article:published_time" content="2020-11-16T13:10:14.000Z">
+<meta property="article:modified_time" content="2021-02-28T08:29:49.631Z">
+<meta property="article:tag" content="操作系统">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://whigy.world//20201117151438.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"输入查询内容","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://whcoding.com/operating-system/"/>
+
+
+
+
+
+  <title>操作系统学习 | 文豪博客 - 技术分享</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">文豪博客 - 技术分享</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+<script data-ad-client="ca-pub-4138648069193740" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://whcoding.com/operating-system/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/25763789?s=400&u=7fd30595b4c43fb3875a7f681ff6bb32640553e8&v=4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="文豪博客 - 技术分享">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">操作系统学习</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-11-16T21:10:14+08:00">
+                2020-11-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">操作系统</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/operating-system/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="operating-system/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/operating-system/" class="leancloud_visitors" data-flag-title="操作系统学习">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="操作系统简介"><a href="#操作系统简介" class="headerlink" title="操作系统简介"></a>操作系统简介</h2><img src="http://whigy.world//20201117151438.png" style="zoom:50%;">
+
+<h3 id="什么是操作系统"><a href="#什么是操作系统" class="headerlink" title="什么是操作系统"></a>什么是操作系统</h3><ol>
+<li>操作系统是 一种复杂的<strong>系统软件</strong>, 是不同 <strong>程序代码</strong> 丶<strong>数据结构</strong>丶 <strong>数据初始化文件</strong>的集合,可执行. (选择题 填空题 简答题)</li>
+</ol>
+<ol start="2">
+<li>操作系统（Operating System, OS）是一种复杂的<strong>系统软件</strong>, 是不<strong>同程序代码、数据结构、数据初始化文件的集合</strong>，可执行. (选择题 填空题 简答题)</li>
+</ol>
+<ol start="3">
+<li>操作系统<strong>与硬件部分相互作用</strong>，并且为运行在计算机上的<strong>应用程序提供执行环境.</strong> (选择题 填空题</li>
+</ol>
+<ol start="4">
+<li>操作系统屏蔽了对接硬件操作的细节, 提供了计算机用户与计算机硬件之间的<strong>接口</strong>, 并且通过这接口, 使 *<em>应用程序 *</em>的开发变得简单高效. (选择题)</li>
+</ol>
+<ol start="5">
+<li><p>操作系统必须完成的目标: (承上启下)</p>
+<ul>
+<li><p>用户与硬件之间的接口</p>
+</li>
+<li><p>操作系统<strong>与硬件部分相互作用</strong></p>
+</li>
+<li><p>为运行在计算机上的<strong>应用程序提供执行环境.</strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="6">
+<li><p>资源的管理者</p>
+<p><img src="http://whigy.world/20201116225912.png" alt></p>
+<ul>
+<li>现在计算机系统的一个重要特点就是支持 <strong>多任务</strong></li>
+<li>处理机就是CPU</li>
+<li>操作系统负者管理计算机的<strong>资源</strong></li>
+</ul>
+</li>
+</ol>
+<h4 id="扩展"><a href="#扩展" class="headerlink" title="扩展"></a>扩展</h4><ol>
+<li>网络操作系统 管理的资源还包括 <strong>网卡</strong> 丶 <strong>带宽</strong></li>
+<li>网络操作系统有 Windows下的 net </li>
+</ol>
+<h3 id="操作系统的发展"><a href="#操作系统的发展" class="headerlink" title="操作系统的发展"></a>操作系统的发展</h3><img src="http://whigy.world//20201117135732.png" style="zoom:50%;">
+
+<ul>
+<li>操作系统每更新一次都会弥补之前的缺点</li>
+</ul>
+<h5 id="单道批处理系统"><a href="#单道批处理系统" class="headerlink" title="单道批处理系统"></a>单道批处理系统</h5><ol>
+<li>单道批处理系统 <strong>内存中只有一道作业</strong> CPU和内存资源被用户作业<strong>独占</strong> (选择题, 填空题)</li>
+<li>特点: <strong>自动型</strong>丶 <strong>顺序型</strong>丶 <strong>单道型</strong>  (选择题, 填空题)</li>
+<li><strong>单道批处理系统的优点: 减少了等待人工操作的时间</strong>  (选择题, 简答题)</li>
+<li><strong>单道批处理系统的缺点: CPU资源不能得到充分利用</strong>  (选择题, 简答题)</li>
+</ol>
+<h5 id="多道批处理系统"><a href="#多道批处理系统" class="headerlink" title="多道批处理系统"></a>多道批处理系统</h5><ol>
+<li><p>由操作系统的<strong>作业调度程序</strong>按一定策略从<strong>后备作业队列</strong>中选择<strong>若干</strong>个作业调入内存，使它们共享CPU和系统中的各种资源 (选择题, 填空题)</p>
+</li>
+<li><p>特点: <strong>多道性丶 无序性丶调度性丶复杂性</strong> (选择题, 填空题)</p>
+</li>
+<li><p>优点: <strong>能够提高CPU,内存和IO设备的利用率和吞吐率</strong> (选择题, 填空题)</p>
+</li>
+<li><p>缺点: *<em>系统平均周转时间长,缺乏交互能力 *</em>(选择题, 填空题) </p>
+</li>
+</ol>
+<h5 id="分时操作系统"><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h5><ol>
+<li><p>允许<strong>多个用户</strong>通过终端机<strong>同时使用计算机</strong>，每个用户通过终端与主机交互时都能得到<strong>快速响应</strong> (选择题)</p>
+</li>
+<li><p>特点: <strong>多路性、独立性、及时性、交互性</strong> ** (选择题, 填空题) </p>
+</li>
+<li><p>优点:  向用户提供了<strong>人机交互的方便行</strong>, 使多个用户可以通过不同的终端*<em>共享主机 *</em>(选择题) </p>
+</li>
+</ol>
+<h5 id="实时操作系统"><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h5><ol>
+<li>实时系统必须<strong>及时响应</strong>外部事件的请求，在<strong>规定时间内</strong>完成对该事件的处理。主要用于<strong>实时控制</strong>和<strong>实时信息处理领域</strong>  (选择题, 填空题)</li>
+<li>特点：<strong>多路性、独立性、及时性、交互性、可靠性</strong>  (选择题, 填空题)</li>
+</ol>
+<h5 id="扩展-1"><a href="#扩展-1" class="headerlink" title="扩展"></a>扩展</h5><ul>
+<li>CPU只能访问内存</li>
+</ul>
+<h3 id="操作系统的特征"><a href="#操作系统的特征" class="headerlink" title="操作系统的特征"></a>操作系统的特征</h3><ul>
+<li>现在操作系统都支持 <strong>多任务</strong> 具有<strong>并发丶共享丶虚拟和异步性</strong>的特征 (选择题, 填空题, 简答题)</li>
+</ul>
+<h4 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h4><ul>
+<li>并发是两个或者多个在同一个<strong>时间间隔内</strong>发生 (选择题, 填空题, 简答题)</li>
+</ul>
+<h4 id="共享"><a href="#共享" class="headerlink" title="共享"></a>共享</h4><ul>
+<li><p>系统中的<strong>资源</strong>可供内存中<strong>多个</strong>并发执行的进程共同使用  (选择题, 填空题, 简答题)</p>
+</li>
+<li><p>其中共享有分为 <strong>互斥共享</strong>和<strong>同时共享</strong></p>
+</li>
+<li><p>互斥共享: 同一时刻一种资源只能被一个进程访问</p>
+</li>
+<li><p>同时共享: 从宏观上看,资源可以被多个进程同时访问, 并发和共享关系是相互依赖的.</p>
+</li>
+</ul>
+<h4 id="虚拟"><a href="#虚拟" class="headerlink" title="虚拟"></a>虚拟</h4><ul>
+<li>常用于内存虚拟化, 让用户感觉到内存大于实际内存</li>
+</ul>
+<h4 id="异步"><a href="#异步" class="headerlink" title="异步"></a>异步</h4><ul>
+<li>进程以<strong>不可预知的速度</strong>向前推荐</li>
+</ul>
+<h4 id="扩展-2"><a href="#扩展-2" class="headerlink" title="扩展"></a>扩展</h4><ul>
+<li>并行是指多个在同一时间同时发生</li>
+<li>并发是两个或者多个在同一个时间间隔内发生</li>
+</ul>
+<h3 id="操作系统的功能"><a href="#操作系统的功能" class="headerlink" title="操作系统的功能"></a>操作系统的功能</h3><h3 id="操作系统的系统结构"><a href="#操作系统的系统结构" class="headerlink" title="操作系统的系统结构"></a>操作系统的系统结构</h3><h3 id="指令的执行"><a href="#指令的执行" class="headerlink" title="指令的执行"></a>指令的执行</h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+
+    
+      <div id="bitcoin" style="display: inline-block">
+        <img id="bitcoin_qr" src="/images/bitcoin.png" alt=" 比特币"/>
+        <p>比特币</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://whcoding.com/operating-system/" title="操作系统学习">https://whcoding.com/operating-system/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"># 操作系统</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/camera/" rel="next" title="相机知识">
+                <i class="fa fa-chevron-left"></i> 相机知识
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://avatars3.githubusercontent.com/u/25763789?s=400&u=7fd30595b4c43fb3875a7f681ff6bb32640553e8&v=4"
+                alt="" />
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description">好好学习, 天天上网👨‍💻‍</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/whcoding" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wh-email@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://944491509.github.io/" title="洋仔" target="_blank">洋仔</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.bingphp.com/" title="冰哥" target="_blank">冰哥</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#操作系统简介"><span class="nav-number">1.</span> <span class="nav-text">操作系统简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是操作系统"><span class="nav-number">1.1.</span> <span class="nav-text">什么是操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展"><span class="nav-number">1.1.1.</span> <span class="nav-text">扩展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作系统的发展"><span class="nav-number">1.2.</span> <span class="nav-text">操作系统的发展</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#单道批处理系统"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">单道批处理系统</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#多道批处理系统"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">多道批处理系统</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分时操作系统"><span class="nav-number">1.2.0.3.</span> <span class="nav-text">分时操作系统</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实时操作系统"><span class="nav-number">1.2.0.4.</span> <span class="nav-text">实时操作系统</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#扩展-1"><span class="nav-number">1.2.0.5.</span> <span class="nav-text">扩展</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作系统的特征"><span class="nav-number">1.3.</span> <span class="nav-text">操作系统的特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#并发"><span class="nav-number">1.3.1.</span> <span class="nav-text">并发</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#共享"><span class="nav-number">1.3.2.</span> <span class="nav-text">共享</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#虚拟"><span class="nav-number">1.3.3.</span> <span class="nav-text">虚拟</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异步"><span class="nav-number">1.3.4.</span> <span class="nav-text">异步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展-2"><span class="nav-number">1.3.5.</span> <span class="nav-text">扩展</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作系统的功能"><span class="nav-number">1.4.</span> <span class="nav-text">操作系统的功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#操作系统的系统结构"><span class="nav-number">1.5.</span> <span class="nav-text">操作系统的系统结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令的执行"><span class="nav-number">1.6.</span> <span class="nav-text">指令的执行</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2021</span>
+
+  <span class="with-love">
+   <i class="fa fa-bookmark"></i>
+  </span>
+
+  <span class="author" itemprop="copyrightHolder"></span>
+
+  
+</div>
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+<!-- 
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+-->
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="powered-by" style="padding-left: 5px;" > 
+  <i class="fa fa-user"></i>
+  <span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+</div>
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'https://whcoding.com/operating-system/';
+          this.page.identifier = 'operating-system/';
+          this.page.title = '操作系统学习';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'EJBjzOB4ina73fbNQspefxoG-gzGzoHsz',
+        appKey: 'oCxNLHSOto4YRDkip8slBi4i',
+        placeholder: '欢迎评论留言哦~',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("EJBjzOB4ina73fbNQspefxoG-gzGzoHsz", "oCxNLHSOto4YRDkip8slBi4i");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
