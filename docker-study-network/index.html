@@ -85,18 +85,18 @@
 <meta property="og:url" content="https://whcoding.com/docker-study-network/index.html">
 <meta property="og:site_name" content="文豪博客 - 技术分享">
 <meta property="og:description" content="理解Docker0网卡  问题: docker 是如何处理容器网络访问的?   我们通过命令查看某一个容器的内部ip 可以看出容器内部的ip和docker0网卡是在同一网段的 并且宿主机和容器之间是可以相互ping通的1docker exec -it tomcat1 ip addr    原理   每启动一个容器, docker就会给容器分配一个ip. 只要安装了docker 就会有一个docke">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-105325.png">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-110556.png">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-111529.png">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-111619.png">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-111821.png">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-112200.png">
-<meta property="og:image" content="https://whcoding.com/.com//WX20200922-151404.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-105325.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-110556.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-111529.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-111619.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-111821.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-112200.png">
+<meta property="og:image" content="https://whcoding.com/docker-study-network/WX20200922-151404.png">
 <meta property="article:published_time" content="2020-09-17T01:38:30.000Z">
 <meta property="article:modified_time" content="2021-02-28T08:27:53.499Z">
 <meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://whcoding.com/.com//WX20200922-105325.png">
+<meta name="twitter:image" content="https://whcoding.com/docker-study-network/WX20200922-105325.png">
 
 
 
@@ -393,14 +393,14 @@
       
 
       
-        <h3 id="理解Docker0网卡"><a href="#理解Docker0网卡" class="headerlink" title="理解Docker0网卡"></a>理解Docker0网卡</h3><p><img src="/.com//WX20200922-105325.png" alt></p>
+        <h3 id="理解Docker0网卡"><a href="#理解Docker0网卡" class="headerlink" title="理解Docker0网卡"></a>理解Docker0网卡</h3><p><img src="WX20200922-105325.png" alt=""></p>
 <blockquote>
 <p>问题: docker 是如何处理容器网络访问的?</p>
 </blockquote>
 <ul>
 <li>我们通过命令查看某一个容器的内部ip 可以看出容器内部的ip和docker0网卡是在同一网段的</li>
 <li>并且宿主机和容器之间是可以相互ping通的<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it tomcat1 ip addr</span><br></pre></td></tr></table></figure>
-<img src="/.com//WX20200922-110556.png" alt></li>
+<img src="WX20200922-110556.png" alt=""></li>
 </ul>
 <blockquote>
 <p>原理</p>
@@ -415,8 +415,8 @@
 <li>evth-pair 就是一对虚拟设备接口, 他们都是成对出现的 一段连着协议, 一段彼此相连</li>
 <li>有了这种特性 evth-pair 充当一个桥梁,连接各种虚拟设备</li>
 </ul>
-<p><img src="/.com//WX20200922-111529.png" alt><br><img src="/.com//WX20200922-111619.png" alt></p>
-<h4 id="画图理解"><a href="#画图理解" class="headerlink" title="画图理解"></a>画图理解</h4><p><img src="/.com//WX20200922-111821.png" alt></p>
+<p><img src="WX20200922-111529.png" alt=""><br><img src="WX20200922-111619.png" alt=""></p>
+<h4 id="画图理解"><a href="#画图理解" class="headerlink" title="画图理解"></a>画图理解</h4><p><img src="WX20200922-111821.png" alt=""></p>
 <blockquote>
 <p>结论</p>
 </blockquote>
@@ -425,7 +425,7 @@
 <li>容器在不指定网络的情况下, 都是走docker0 路由的 docker会给容器分配一个默认的ip</li>
 <li>Docker中所有的网络接口都是虚拟的</li>
 </ul>
-<p><img src="/.com//WX20200922-112200.png" alt></p>
+<p><img src="WX20200922-112200.png" alt=""></p>
 <h3 id="容器互联-–link"><a href="#容器互联-–link" class="headerlink" title="容器互联 –link"></a>容器互联 –link</h3><ul>
 <li>通过上面我们会发现容器之间可以通过ip地址是可以ping通的</li>
 <li>那么再某些情况下不用ip 我们可不可以用容器名的方式 ping通?</li>
@@ -475,7 +475,7 @@
 <h3 id="网络连通"><a href="#网络连通" class="headerlink" title="网络连通"></a>网络连通</h3><h4 id="容器在不同的网段内如何实现互通"><a href="#容器在不同的网段内如何实现互通" class="headerlink" title="容器在不同的网段内如何实现互通?"></a>容器在不同的网段内如何实现互通?</h4><blockquote>
 <p>示意图</p>
 </blockquote>
-<p><img src="/.com//WX20200922-151404.png" alt></p>
+<p><img src="WX20200922-151404.png" alt=""></p>
 <ul>
 <li>我们会发现不同网段的容器不能ping通的.</li>
 </ul>
@@ -727,24 +727,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://944491509.github.io/" title="洋仔" target="_blank">洋仔</a>
-                  </li>
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="http://www.bingphp.com/" title="冰哥" target="_blank">冰哥</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           

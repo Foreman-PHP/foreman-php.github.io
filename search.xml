@@ -17,9 +17,9 @@
 </ul>
 <h4 id="它们之间的区别"><a href="#它们之间的区别" class="headerlink" title="它们之间的区别"></a>它们之间的区别</h4><h5 id="单反-单镜头反光相机"><a href="#单反-单镜头反光相机" class="headerlink" title="单反(单镜头反光相机)"></a>单反(单镜头反光相机)</h5><p>又大又重, 上手难度大, 携带不便 比较适合职业摄影师. </p>
 <p>在取景器中看到的东西就像看镜子里的一样, 但是实际拍摄出来的照片和镜子是不一样的, 所以单反是 所见非所得.</p>
-<p><img src="/.com//1.png" alt></p>
+<p><img src="1.png" alt=""></p>
 <h5 id="微单-无反相机"><a href="#微单-无反相机" class="headerlink" title="微单(无反相机)"></a>微单(无反相机)</h5><p>微单采用的是电子取景器,在这个取景器中所见即所得 而且没有单反那样庞大的反光组件, 所以微单要比单反小的多,轻的多.</p>
-<p><img src="/.com//2.png" alt></p>
+<p><img src="2.png" alt=""></p>
 <h5 id="卡片相机"><a href="#卡片相机" class="headerlink" title="卡片相机"></a>卡片相机</h5><p>像卡片一样轻薄的相机,可以放进口袋里. 拍照时镜头会自动伸缩出来. 重量上一般只比手机重一点.</p>
 <p>它和单反、微单之间最大区别就是 卡片不能更换镜头. 局限性比较大. </p>
 <h5 id="运动相机"><a href="#运动相机" class="headerlink" title="运动相机"></a>运动相机</h5><p>优点: 便携、轻量、防水、防尘 运动记录</p>
@@ -28,7 +28,7 @@
 <p>缺点:在光线比较复杂的环境,手机就比较无力了</p>
 <h3 id="相机硬件知识"><a href="#相机硬件知识" class="headerlink" title="相机硬件知识"></a>相机硬件知识</h3><h4 id="传感器"><a href="#传感器" class="headerlink" title="传感器"></a>传感器</h4><p>传感器的尺寸是相机的最大的硬性指标, 它是对照片影响最大的部件. </p>
 <p>通常巨大的广告牌都是由中画幅来拍摄的, 把照片放大可以看都每一个毛孔.</p>
-<p><img src="/.com//3.png" alt></p>
+<p><img src="3.png" alt=""></p>
 ]]></content>
       <categories>
         <category>相机</category>
@@ -251,7 +251,7 @@
 <blockquote>
 <p>可以使用 docker inspect 命令 查看挂载</p>
 </blockquote>
-<p><img src="/.com//WX20200911-112210.png" alt></p>
+<p><img src="WX20200911-112210.png" alt=""></p>
 <h3 id="mysql容器实战"><a href="#mysql容器实战" class="headerlink" title="mysql容器实战"></a>mysql容器实战</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 命令详解</span><br><span class="line"># -d 后台运行</span><br><span class="line"># -p 端口映射 宿主机端口:容器内端口</span><br><span class="line"># -v 数据卷挂载</span><br><span class="line"># -e 环境配置</span><br><span class="line"># --name 容器名字</span><br><span class="line"></span><br><span class="line">docker run -d -p 3333:3306 -v &#x2F;home&#x2F;docker&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql&#x2F;conf.d -v &#x2F;home&#x2F;docker&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql -e MYSQL_ROOT_PASSWORD&#x3D;root --name my-mysql mysql</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>假设我们将容器删除, 就会发现挂载到本地的数据劵依旧没有丢失, 这就实现了容器数据化持久功能</p>
@@ -267,7 +267,7 @@
 <ul>
 <li><code>/var/lib/docker/</code> 目录就是docker的工作目录</li>
 <li>在其中 <code>/var/lib/docker/volumes/</code> 目录就是存放了 docker 的所有挂载卷</li>
-<li>进入到目录中就可以看到挂载的目录了<br><img src="/.com//WX20200911-140715.png" alt></li>
+<li>进入到目录中就可以看到挂载的目录了<br><img src="WX20200911-140715.png" alt=""></li>
 </ul>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">-v 容器内路径            # 匿名挂载</span><br><span class="line">-v 卷名:容器内路径        # 具名挂载</span><br><span class="line">-v 宿主机路径:容器内路径   # 指定路径挂载</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -334,11 +334,11 @@
 <li>系统启动都需要引导加载也就是 bootloader和kernel, 系统运行起来之后就不需要bootfs, 也就会把它卸载掉 </li>
 <li>对于Docker安装OS来说Docker使用了Linux本身的bootfs, 只需要安装自己所需的rootfs  </li>
 </ul>
-<p><img src="/.com//WX20200910-134218.png" alt></p>
+<p><img src="WX20200910-134218.png" alt=""></p>
 <h4 id="分层理解"><a href="#分层理解" class="headerlink" title="分层理解"></a>分层理解</h4><ul>
 <li>Docker安装普通镜像来说 Docker本身是分层下载镜像, 所以可以提取出公共层镜像进行复用.</li>
 </ul>
-<p><img src="/.com//WX20200910-145017.png" alt></p>
+<p><img src="WX20200910-145017.png" alt=""></p>
 ]]></content>
       <categories>
         <category>Docker</category>
@@ -350,7 +350,7 @@
   <entry>
     <title>Docker 安装</title>
     <url>/docker-study-install/</url>
-    <content><![CDATA[<h4 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h4><p><img src="/.com//WX20200909-103930.png" alt></p>
+    <content><![CDATA[<h4 id="Docker的基本组成"><a href="#Docker的基本组成" class="headerlink" title="Docker的基本组成"></a>Docker的基本组成</h4><p><img src="WX20200909-103930.png" alt=""></p>
 <ul>
 <li>镜像(Image): docker镜像, 就相当于是镜像模板, 比如官方镜像Ubuntu:16.04就包含了完整的一套Ubuntu16.4最小系统 可以通过镜像来创建一个或多个容器.</li>
 <li>容器(Container): 镜像和容器的关系, 就像面向对象程序设计种的类和对象一样, 镜像是静态的定义, 容器时镜像运行时的实体, 容器可以被创建 启动 停止 删除 暂停等.</li>
@@ -381,18 +381,18 @@
 <li><p>启动docker</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo service docker start</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>使用 docker version 判断是否安装成功<br><img src="/.com//WX20200909-114550.png" alt></p>
+<li><p>使用 docker version 判断是否安装成功<br><img src="./WX20200909-114550.png" alt=""></p>
 </li>
 </ol>
-<h3 id="运行-hello-world"><a href="#运行-hello-world" class="headerlink" title="运行 hello-world"></a>运行 hello-world</h3><h4 id="使用-docker-run-hello-world"><a href="#使用-docker-run-hello-world" class="headerlink" title="使用 docker run hello-world"></a>使用 docker run hello-world</h4><p><img src="/.com//WX20200909-115716.png" alt></p>
+<h3 id="运行-hello-world"><a href="#运行-hello-world" class="headerlink" title="运行 hello-world"></a>运行 hello-world</h3><h4 id="使用-docker-run-hello-world"><a href="#使用-docker-run-hello-world" class="headerlink" title="使用 docker run hello-world"></a>使用 docker run hello-world</h4><p><img src="WX20200909-115716.png" alt=""></p>
 <ul>
 <li>上图可以看到第一步运行 docker run hello-world 命令后先在本来没有在本地找到 hello-world 镜像 </li>
 <li>第二步开始去远程仓库拉去 hello-world 镜像, 拉去完成之后返回一串签名信息</li>
 <li>第三步输出了 Hello from Docker! 表示已经完成了</li>
 </ul>
-<h4 id="docker-run-命令详细分析"><a href="#docker-run-命令详细分析" class="headerlink" title="docker run 命令详细分析"></a>docker run 命令详细分析</h4><p><img src="/.com//WX20200909-133458.png" alt></p>
+<h4 id="docker-run-命令详细分析"><a href="#docker-run-命令详细分析" class="headerlink" title="docker run 命令详细分析"></a>docker run 命令详细分析</h4><p><img src="WX20200909-133458.png" alt=""></p>
 <h4 id="查看下载的镜像"><a href="#查看下载的镜像" class="headerlink" title="查看下载的镜像"></a>查看下载的镜像</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
-<p><img src="/.com//WX20200909-120332.png" alt></p>
+<p><img src="WX20200909-120332.png" alt=""></p>
 <h4 id="卸载-docker"><a href="#卸载-docker" class="headerlink" title="卸载 docker"></a>卸载 docker</h4><ol>
 <li>卸载Docker Engine, CLI和Containerd软件包<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo apt-get purge docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure></li>
 <li>手动删除docker的资源 比如: images, containers, volumes<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo rm -rf &#x2F;var&#x2F;lib&#x2F;docker</span><br></pre></td></tr></table></figure>
@@ -406,11 +406,11 @@
 <li>Docker是一个 Client -  Server 结构的系统, Docker的守护进程运行在主机上, 通过 Socket从客户端访问</li>
 <li>DockerServer 接收到 DockerClient的指令, 就会执行这个命令</li>
 </ul>
-<p><img src="/.com//WX20200909-143306.png" alt></p>
+<p><img src="WX20200909-143306.png" alt=""></p>
 <blockquote>
 <p>Docker为什么比虚拟机快</p>
 </blockquote>
-<p><img src="/.com//WX20200909-143747.png" alt></p>
+<p><img src="WX20200909-143747.png" alt=""></p>
 <ol>
 <li>Docker有着比虚拟机更少的抽象层</li>
 <li>Docker利用的是宿主机的内核, 而 vm 需要 Guest OS.</li>
@@ -443,14 +443,14 @@
   <entry>
     <title>Docker 网络原理</title>
     <url>/docker-study-network/</url>
-    <content><![CDATA[<h3 id="理解Docker0网卡"><a href="#理解Docker0网卡" class="headerlink" title="理解Docker0网卡"></a>理解Docker0网卡</h3><p><img src="/.com//WX20200922-105325.png" alt></p>
+    <content><![CDATA[<h3 id="理解Docker0网卡"><a href="#理解Docker0网卡" class="headerlink" title="理解Docker0网卡"></a>理解Docker0网卡</h3><p><img src="WX20200922-105325.png" alt=""></p>
 <blockquote>
 <p>问题: docker 是如何处理容器网络访问的?</p>
 </blockquote>
 <ul>
 <li>我们通过命令查看某一个容器的内部ip 可以看出容器内部的ip和docker0网卡是在同一网段的</li>
 <li>并且宿主机和容器之间是可以相互ping通的<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">docker exec -it tomcat1 ip addr</span><br></pre></td></tr></table></figure>
-<img src="/.com//WX20200922-110556.png" alt></li>
+<img src="WX20200922-110556.png" alt=""></li>
 </ul>
 <blockquote>
 <p>原理</p>
@@ -465,8 +465,8 @@
 <li>evth-pair 就是一对虚拟设备接口, 他们都是成对出现的 一段连着协议, 一段彼此相连</li>
 <li>有了这种特性 evth-pair 充当一个桥梁,连接各种虚拟设备</li>
 </ul>
-<p><img src="/.com//WX20200922-111529.png" alt><br><img src="/.com//WX20200922-111619.png" alt></p>
-<h4 id="画图理解"><a href="#画图理解" class="headerlink" title="画图理解"></a>画图理解</h4><p><img src="/.com//WX20200922-111821.png" alt></p>
+<p><img src="WX20200922-111529.png" alt=""><br><img src="WX20200922-111619.png" alt=""></p>
+<h4 id="画图理解"><a href="#画图理解" class="headerlink" title="画图理解"></a>画图理解</h4><p><img src="WX20200922-111821.png" alt=""></p>
 <blockquote>
 <p>结论</p>
 </blockquote>
@@ -475,7 +475,7 @@
 <li>容器在不指定网络的情况下, 都是走docker0 路由的 docker会给容器分配一个默认的ip</li>
 <li>Docker中所有的网络接口都是虚拟的</li>
 </ul>
-<p><img src="/.com//WX20200922-112200.png" alt></p>
+<p><img src="WX20200922-112200.png" alt=""></p>
 <h3 id="容器互联-–link"><a href="#容器互联-–link" class="headerlink" title="容器互联 –link"></a>容器互联 –link</h3><ul>
 <li>通过上面我们会发现容器之间可以通过ip地址是可以ping通的</li>
 <li>那么再某些情况下不用ip 我们可不可以用容器名的方式 ping通?</li>
@@ -525,7 +525,7 @@
 <h3 id="网络连通"><a href="#网络连通" class="headerlink" title="网络连通"></a>网络连通</h3><h4 id="容器在不同的网段内如何实现互通"><a href="#容器在不同的网段内如何实现互通" class="headerlink" title="容器在不同的网段内如何实现互通?"></a>容器在不同的网段内如何实现互通?</h4><blockquote>
 <p>示意图</p>
 </blockquote>
-<p><img src="/.com//WX20200922-151404.png" alt></p>
+<p><img src="WX20200922-151404.png" alt=""></p>
 <ul>
 <li>我们会发现不同网段的容器不能ping通的.</li>
 </ul>
@@ -569,7 +569,7 @@
 <blockquote>
 <p>虚拟机技术</p>
 </blockquote>
-<p><img src="/.com//1.png" alt></p>
+<p><img src="1.png" alt=""></p>
 <h5 id="虚拟机的缺点"><a href="#虚拟机的缺点" class="headerlink" title="虚拟机的缺点"></a>虚拟机的缺点</h5><ul>
 <li>占用资源多</li>
 <li>冗余步骤多</li>
@@ -579,7 +579,7 @@
 <p>容器化技术</p>
 </blockquote>
 <p><label style="color:red">容器化技术它不是模拟的一个完整的操作系统</label></p>
-<p><img src="/.com//2.png" alt></p>
+<p><img src="2.png" alt=""></p>
 <h4 id="Docker和虚拟机的不同"><a href="#Docker和虚拟机的不同" class="headerlink" title="Docker和虚拟机的不同"></a>Docker和虚拟机的不同</h4><ul>
 <li>传统虚拟机, 虚拟出硬件, 运行一个完整的操作系统. 然后在这个系统上安装和运行软件</li>
 <li>docker容器内直接运行宿主机的内核,容器是没有直接的内核的也没有虚拟硬件, 所以就轻便的很多</li>
@@ -627,7 +627,7 @@
     <url>/editor/</url>
     <content><![CDATA[<h2 id="vscode-编辑器"><a href="#vscode-编辑器" class="headerlink" title="vscode 编辑器"></a>vscode 编辑器</h2><ol>
 <li>打开控制面板（⇧⌘P)</li>
-<li>输入 shell command  回车安装<br><img src="/images/twst.png" alt></li>
+<li>输入 shell command  回车安装<br><img src="/images/twst.png" alt=""></li>
 <li>在提示里看到 Shell Command: Install ‘code’ command in PATH， 就可以了</li>
 </ol>
 <h3 id="在命令行你需要打开的目录下运行"><a href="#在命令行你需要打开的目录下运行" class="headerlink" title="在命令行你需要打开的目录下运行"></a>在命令行你需要打开的目录下运行</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">code .</span><br></pre></td></tr></table></figure>
@@ -660,7 +660,7 @@
 <h3 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h3><ul>
 <li>还是简单工厂模式的那个栗子, 我们发现简单工厂模式违背了开闭原则,那么怎么解决个问题呢请看下面</li>
 </ul>
-<h3 id="工厂方法模式流程图"><a href="#工厂方法模式流程图" class="headerlink" title="工厂方法模式流程图"></a>工厂方法模式流程图</h3><p><img src="/.com//QQ20200928-155642.jpg" alt></p>
+<h3 id="工厂方法模式流程图"><a href="#工厂方法模式流程图" class="headerlink" title="工厂方法模式流程图"></a>工厂方法模式流程图</h3><p><img src="QQ20200928-155642.jpg" alt=""></p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
 <li>为了满足闭合原则, 同时不去改动之前的代码(也就是简单工厂中的静态方法)</li>
 <li>只要是实现了接口类我们就可以随意的去扩展代码,从而避免修改之前的代码</li>
@@ -683,10 +683,10 @@
 <li>作用: 实现了创建者和调用者分离</li>
 </ul>
 <h3 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h3><p>假设:用户需要买车,每一个车就是一个类, 每一个类都需要new一次, 周一买特斯拉 周二买奥迪 周三买宝马 这样每次都会更改大量的代码.</p>
-<h4 id="常规流程图"><a href="#常规流程图" class="headerlink" title="常规流程图:"></a>常规流程图:</h4><p><img src="/.com//QQ20200928-094926.jpg" alt></p>
+<h4 id="常规流程图"><a href="#常规流程图" class="headerlink" title="常规流程图:"></a>常规流程图:</h4><p><img src="QQ20200928-094926.jpg" alt=""></p>
 <h4 id="常规的代码"><a href="#常规的代码" class="headerlink" title="常规的代码:"></a>常规的代码:</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; $car &#x3D; new Tesla();</span><br><span class="line">&#x2F;&#x2F; $car &#x3D; new Audi();</span><br><span class="line">$car &#x3D; new Benz();</span><br><span class="line"></span><br><span class="line">echo $car-&gt;name();</span><br></pre></td></tr></table></figure>
 
-<h4 id="简单工厂模式流程图"><a href="#简单工厂模式流程图" class="headerlink" title="简单工厂模式流程图:"></a>简单工厂模式流程图:</h4><p><img src="/.com//QQ20200928-160008.jpg" alt></p>
+<h4 id="简单工厂模式流程图"><a href="#简单工厂模式流程图" class="headerlink" title="简单工厂模式流程图:"></a>简单工厂模式流程图:</h4><p><img src="QQ20200928-160008.jpg" alt=""></p>
 <h4 id="简单工厂模式代码"><a href="#简单工厂模式代码" class="headerlink" title="简单工厂模式代码:"></a>简单工厂模式代码:</h4><p>工厂文件代码:</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">class Factory</span><br><span class="line">&#123;</span><br><span class="line">    public static function GetLogic($carName)</span><br><span class="line">    &#123;</span><br><span class="line">        $instance &#x3D; null;</span><br><span class="line">        if ($carName &#x3D;&#x3D; &#39;奥迪&#39;) &#123;</span><br><span class="line">           $instance &#x3D; new Audi();</span><br><span class="line">        &#125; elseif ($carName &#x3D;&#x3D; &#39;宝马&#39;) &#123;</span><br><span class="line">            $instance &#x3D; new Benz();</span><br><span class="line">        &#125; elseif ($carName &#x3D;&#x3D; &#39;特斯拉&#39;) &#123;</span><br><span class="line">            $instance &#x3D; new Tesla();</span><br><span class="line">        &#125;</span><br><span class="line">        return $instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -964,9 +964,7 @@
   <entry>
     <title>操作系统学习</title>
     <url>/operating-system/</url>
-    <content><![CDATA[<h2 id="操作系统简介"><a href="#操作系统简介" class="headerlink" title="操作系统简介"></a>操作系统简介</h2><img src="http://whigy.world//20201117151438.png" style="zoom:50%;">
-
-<h3 id="什么是操作系统"><a href="#什么是操作系统" class="headerlink" title="什么是操作系统"></a>什么是操作系统</h3><ol>
+    <content><![CDATA[<h2 id="操作系统简介"><a href="#操作系统简介" class="headerlink" title="操作系统简介"></a>操作系统简介</h2><h3 id="什么是操作系统"><a href="#什么是操作系统" class="headerlink" title="什么是操作系统"></a>什么是操作系统</h3><ol>
 <li>操作系统是 一种复杂的<strong>系统软件</strong>, 是不同 <strong>程序代码</strong> 丶<strong>数据结构</strong>丶 <strong>数据初始化文件</strong>的集合,可执行. (选择题 填空题 简答题)</li>
 </ol>
 <ol start="2">
@@ -992,7 +990,6 @@
 </ol>
 <ol start="6">
 <li><p>资源的管理者</p>
-<p><img src="http://whigy.world/20201116225912.png" alt></p>
 <ul>
 <li>现在计算机系统的一个重要特点就是支持 <strong>多任务</strong></li>
 <li>处理机就是CPU</li>
@@ -1004,9 +1001,7 @@
 <li>网络操作系统 管理的资源还包括 <strong>网卡</strong> 丶 <strong>带宽</strong></li>
 <li>网络操作系统有 Windows下的 net </li>
 </ol>
-<h3 id="操作系统的发展"><a href="#操作系统的发展" class="headerlink" title="操作系统的发展"></a>操作系统的发展</h3><img src="http://whigy.world//20201117135732.png" style="zoom:50%;">
-
-<ul>
+<h3 id="操作系统的发展"><a href="#操作系统的发展" class="headerlink" title="操作系统的发展"></a>操作系统的发展</h3><ul>
 <li>操作系统每更新一次都会弥补之前的缺点</li>
 </ul>
 <h5 id="单道批处理系统"><a href="#单道批处理系统" class="headerlink" title="单道批处理系统"></a>单道批处理系统</h5><ol>
@@ -1164,7 +1159,7 @@
     <url>/ubuntu-lnmp/</url>
     <content><![CDATA[<h5 id="更新-apt-get"><a href="#更新-apt-get" class="headerlink" title="更新 apt-get"></a>更新 apt-get</h5><pre><code>命令: sudo apt update</code></pre><h5 id="安装-nginx"><a href="#安装-nginx" class="headerlink" title="安装 nginx"></a>安装 nginx</h5><pre><code>命令: sudo apt install nginx </code></pre><p>安装完成之后可以在浏览器看到 nginx 默认欢迎页</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;server_domain_or_ip</span><br></pre></td></tr></table></figure>
-<p><img src="/images/nginx_default.png" alt><br>如果看到上面的页面,则说明您已经成功安装了 nginx</p>
+<p><img src="/images/nginx_default.png" alt=""><br>如果看到上面的页面,则说明您已经成功安装了 nginx</p>
 <h5 id="安装-mysql"><a href="#安装-mysql" class="headerlink" title="安装 mysql"></a>安装 mysql</h5><pre><code>命令: sudo apt install mysql-server</code></pre><p>运行完命令 Mysql数据库 就已经安装了, 但没配置完成.</p>
 <p>为了确保安全, Mysql附带了一个脚步, 运行该脚本会询问我们是否修改一些不安全的默认值, 通过以下命令来启动脚本</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
