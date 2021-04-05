@@ -154,8 +154,8 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  洋仔: https://944491509.github.io/ 
-  冰哥: http://www.bingphp.com/
+  # 洋仔: https://944491509.github.io/
+  # 冰哥: http://www.bingphp.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif

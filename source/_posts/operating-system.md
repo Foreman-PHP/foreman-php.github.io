@@ -8,7 +8,6 @@ categories: 操作系统
 
 ## 操作系统简介
 
-<img src="http://whigy.world//20201117151438.png" style="zoom:50%;" />
 
 ### 什么是操作系统
 
@@ -40,8 +39,6 @@ categories: 操作系统
 
 6. 资源的管理者
 
-   ![](http://whigy.world/20201116225912.png)
-
    - 现在计算机系统的一个重要特点就是支持 **多任务**
    - 处理机就是CPU
    - 操作系统负者管理计算机的**资源**
@@ -56,8 +53,6 @@ categories: 操作系统
 
 
 ### 操作系统的发展
-
-<img src="http://whigy.world//20201117135732.png" style="zoom:50%;" />
 
 - 操作系统每更新一次都会弥补之前的缺点
 

@@ -98,10 +98,10 @@ theme: next
 deploy:
 - type: git
   repo:
-    gitee: git@gitee.com:wh-coding/wh-coding.git
+#    gitee: git@gitee.com:wh-coding/wh-coding.git
     github: git@github.com:whcoding/whcoding.github.io.git
   branch: master
-- type: baidu_url_submitter
+#- type: baidu_url_submitter
 
 search:
   path: search.xml
