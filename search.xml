@@ -47,7 +47,7 @@
 
 <h5 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;bin&#x2F;php-fpm</span><br></pre></td></tr></table></figure>
 
-<h4 id="将-php-fpm-添加到系统服务"><a href="#将-php-fpm-添加到系统服务" class="headerlink" title="将 php-fpm 添加到系统服务"></a>将 php-fpm 添加到系统服务</h4><p>在php源码目录执行<br>这样做的好处就是可以使用 <code>service</code> 命令来管理php-fpm </p>
+<h4 id="将-php-fpm-添加到系统服务"><a href="#将-php-fpm-添加到系统服务" class="headerlink" title="将 php-fpm 添加到系统服务"></a>将 php-fpm 添加到系统服务</h4><p>在php源码目录执行<br>这样做的好处就是可以使用 <code>service</code> 命令来管理php-fpm  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cp &#x2F;home&#x2F;php-8.0.3&#x2F;sapi&#x2F;fpm&#x2F;init.d.php-fpm &#x2F;etc&#x2F;init.d&#x2F;php8-fpm </span><br><span class="line"></span><br><span class="line">chmod +x &#x2F;etc&#x2F;init.d&#x2F;php8-fpm</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>lnmp</category>
@@ -1215,7 +1215,7 @@
     <url>/ubuntu-lnmp/</url>
     <content><![CDATA[<h5 id="更新-apt-get"><a href="#更新-apt-get" class="headerlink" title="更新 apt-get"></a>更新 apt-get</h5><pre><code>命令: sudo apt update</code></pre><h5 id="安装-nginx"><a href="#安装-nginx" class="headerlink" title="安装 nginx"></a>安装 nginx</h5><pre><code>命令: sudo apt install nginx </code></pre><p>安装完成之后可以在浏览器看到 nginx 默认欢迎页</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;server_domain_or_ip</span><br></pre></td></tr></table></figure>
-<p><img src="/images/nginx_default.png" alt=""><br>如果看到上面的页面,则说明您已经成功安装了 nginx</p>
+<p><img src="/compile-install-lnmp/nginx_default.png" alt=""><br>如果看到上面的页面,则说明您已经成功安装了 nginx</p>
 <h5 id="安装-mysql"><a href="#安装-mysql" class="headerlink" title="安装 mysql"></a>安装 mysql</h5><pre><code>命令: sudo apt install mysql-server</code></pre><p>运行完命令 Mysql数据库 就已经安装了, 但没配置完成.</p>
 <p>为了确保安全, Mysql附带了一个脚步, 运行该脚本会询问我们是否修改一些不安全的默认值, 通过以下命令来启动脚本</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
