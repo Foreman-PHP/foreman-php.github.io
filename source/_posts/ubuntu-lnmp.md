@@ -17,7 +17,7 @@ tags: 环境
 ```code
 	http://server_domain_or_ip
 ```
-![](/images/nginx_default.png)
+![](/compile-install-lnmp/nginx_default.png)
 如果看到上面的页面,则说明您已经成功安装了 nginx
 
 ##### 安装 mysql
