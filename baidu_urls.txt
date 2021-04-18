@@ -1,3 +1,4 @@
+https://whcoding.com/compile-install-lnmp/
 https://whcoding.com/operating-system/
 https://whcoding.com/camera/
 https://whcoding.com/factory-method/
@@ -7,4 +8,3 @@ https://whcoding.com/single/
 https://whcoding.com/docker-compose/
 https://whcoding.com/docker-study-network/
 https://whcoding.com/docker-study-docker-file/
-https://whcoding.com/money/
